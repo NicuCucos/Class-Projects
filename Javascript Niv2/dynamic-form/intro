@@ -1,0 +1,37 @@
+multistep form
+polls
+---> stats
+
+DOM / BOM  - Events
+
+* Objects ----> appear  -> User
+* acttion ---> JS(reaction)
+* classes (Mouse,Keyboard,DOM,Window...)
+
+
+* common properties
+-coordonates(X,Y,Z)
+-code / status(ctrl, alt, shift)
+-target (source)
+-type -> string('click',"keydown")
+- isTrusted -> real / virtual
+- .stopPropagation()
+- .preventDefault()
+
+*connect
+1) <tag on[event] = function_name();>  HTML Varianta
+2) element = getElementById ('my_id')
+
+element.on[event] = function(){
+
+}
+
+function action(){
+
+}
+
+element.on[event] = action; JS Varianta
+
+
+element.addEventListener('event',action,...)
+element.removeListener('event',action)

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple DOM tank</title>
+        <style media="screen">
+            .up{
+                transform:rotate(-90deg);
+            }
+            .right{
+                transform:rotate(0deg);
+            }
+            .down{
+                transform:rotate(90deg);
+            }
+            .left{
+                transform:rotate(180deg);
+            }
+        </style>
+    </head>
+    <body onkeydown="move();">
+        <div id="tank">
+            <img class="right" src="https://static.thenounproject.com/png/1325281-200.png">
+        </div>
+
+        <script type="text/javascript">
+        function move(){
+        console.log(event);
+        if (event.code == "ArrowUp"){
+            turn("up");
+        }
+        if (event.code == "ArrowDown"){
+            turn("down");
+        }
+        if (event.code == "ArrowLeft"){
+            turn("left");
+        }
+        if (event.code == "ArrowRight"){
+            turn("right");
+        }
+}
+        function turn(direction){
+            document.images[0].className=direction;
+        }
+        turn("right");
+
+        </script>
+    </body>
+</html>

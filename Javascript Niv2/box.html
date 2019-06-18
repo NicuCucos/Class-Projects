@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BoX</title>
+</head>
+<body>
+    <div id="box" style="width:100px; height:100px; background: #00FF00;"></div>
+
+<input id="color" value="#00FF00" type="color"  onChange="change( value, color)">
+<input id="size" type="range" value="100" min="10" max="200" step="10"  onChange="change(size, value)">
+
+    <script>
+    	function change(color, size){
+    		var go = document.getElementById('box');
+            go.style.background = color;
+            go.style.width = size + 'px';
+    		go.style.height = size + 'px';
+    		}
+    </script>
+</body>
+</html>

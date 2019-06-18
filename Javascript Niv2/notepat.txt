@@ -1,0 +1,73 @@
+* classes / Objects (>>>>>>.REACTT)
+*DOM (Document Object Model)
+-elements
+-hierarchy
+-stylesheets
+-events
+*BOM(Browser Object Model)
+-window
+-navigator
+-location
+-resources
+*Web API
+- fetch API, AJAX <-> SERVER
+-storage API / Cache API
+- Animation API
+- Audio API, Video API
+* Google Services, Wheather Services, News....
+
+
+page html --------------> load ----------> Browser
+
+Browser ------- (parse) --------> DOM <----x---> Window <-> User
+
+Variabile si Proprietati globale(DOM):
+
+
+Document.title -> <title>
+Document.head -> <head>
+document.body - > <body>
+
+document.images -> img Collection
+ducument.links -> links din document
+document.forms -> formulare
+window.xxxx - > <tag id= "xxxx">
+window['xxxx-xxxx'] - <tag id="xxxx-xxxx">
+
+Functii de cautare in DOM;
+
+document.getElementById('my-id') -> ofj / null
+document.getElementsByClassName('my-class') -> obj[] / []
+document.getElementsByTagName('tag') -> obj[] / []
+
+//modern browsers
+
+document.querySelector('css selector') > obj / null
+document.querySelectorAll('css selector') > obj[] / []
+
+// ELEMENT
+
+learn.javascript.ru Elements
+
+// ATRIBUTES
+
+.innerHTML -> <tag>
+
+(standard: id,style,width,height....)
+
+element.attribute
+elemenet.className -> class
+
+
+AJAX / Fetch API - permit sa face schimbul de date cu serverul fara sa reincarcam pagina
+*client -> Server
+*HTTP(S)
+(request/reponse)
+(GET/POST)
+(status code)
+(mime type/data format)
+(request lifecycle)
+(CORS/XSS)
+
+
+Websocckets / Push Notification (mai avansate)

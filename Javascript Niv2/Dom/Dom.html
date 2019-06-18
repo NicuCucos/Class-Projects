@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DOM navigation</title>
+        <style media="screen">
+            .active{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><small>DOM</small>structure</h1>
+        <ul>
+            <li>Document</li>
+            <li>Object</li>
+            <li>Model</li>
+        </ul>
+        <h2>Element</h2>
+        <ul>
+            <li>.parentElement</li>
+            <li>.nextElementSibling</li>
+            <li>.prevElementSibling</li>
+            <li>.firstElementChild</li>
+            <li>.lastElementChild</li>
+            <li>.children[]</li>
+        </ul>
+
+
+        <script type="text/javascript">
+            // alert (textul din h1>small)
+
+            //h2 -->>>
+var snoopyk = document.body.children[2];
+snoopyk.nextElementSibling.children[0].className = "active";
+snoopyk.nextElementSibling.children[2].className = "active";
+snoopyk.nextElementSibling.children[4].className = "active";
+        </script>
+    </body>
+</html>
