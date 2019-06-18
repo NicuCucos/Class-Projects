@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cub</title>
+    <style media="screen">
+    #box {
+background-color: red;
+width: 200px;
+height: 200px;
+position: relative;
+left: 600px;
+top: 250px;
+}
+
+#box div:nth-child(odd) {
+position: absolute;
+width: 40px;
+height: 40px;
+}
+
+#box div:nth-child(even) {
+position: absolute;
+width: 40px;
+height: 40px;
+}
+#box div:nth-child(1) {
+border-top: 3px solid blue;
+left: -20px;
+top: -20px;
+}
+#box div:nth-child(2) {
+border-right: 3px solid blue;
+left: -40px;
+top: -40px;
+}
+
+#box div:nth-child(3) {
+border-left: 3px solid blue;
+right: -40px;
+top: -40px;
+}
+#box div:nth-child(4) {
+border-top: 3px solid blue;
+right: -20px;
+top: -20px;
+}
+#box div:nth-child(5) {
+border-bottom: 3px solid blue;
+left: -20px;
+bottom: -20px;
+}
+#box div:nth-child(6) {
+border-right: 3px solid blue;
+left: -40px;
+bottom: -40px;
+}
+
+#box div:nth-child(7) {
+border-bottom: 3px solid blue;
+right: -20px;
+bottom: -20px;
+}
+#box div:nth-child(8) {
+border-left: 3px solid blue;
+right: -40px;
+bottom: -40px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

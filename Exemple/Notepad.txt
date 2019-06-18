@@ -1,0 +1,135 @@
+poistion:
+*static
+*relative
+- nu incalca regimul stational
+-poate fi deplasat liber fata de pozitia initiala cu ajutorul urmatoarelor coordonate:
+(top, right,left,bottom)poate fi si cu minus
+left: -10px == right 10px;
+
+*absolute
+-in schema pozitionare absoluta elementul este mutat intrun strat separat in aceleasi coodronate care el se afla initial; ca urmare elementul se comporat asa ca cum nar avea vecini; celelate elemente se comporata asa ca cum acest element nar exista;
+- in acest regim din start coordonatele by default se masoara de la margina(laturile) ferestrei
+-daca macar un div nui static ap coordonatele se masoare la cel mai apropiat parinte care nui static
+*fixed
+-mosteneste practic tot din absolute in afara de 2 momente:
+1. Elemenetul ramane in coordonatele indicate indiferent de scroolingul ferestrei
+2. Coordonatele intodeauna se masoara doar de la fereastra
+*sticky
+-in mod normal e pozitionat fix, dar cand ajunge la alt element se stopeaza
+
+
+@nume{
+constrctii speciale
+
+}
+
+Adaptive >
+1)media device (all, screen, pirnt, speech)
+2)device features
+
+
+SASS/SCSS/LESS/STYLUS
+
+SCSS:(definite)
+CSS preprocessor
+CSS with super powers
+CSS + programing
+*selectors +
+*types
+*variables
+*operators
+* flow control
+*functions
+*mixins
+
+
+ // modern CSSS --> float, display: inline-block,table,position
+CSS FLEX/FLEXBOX -> 2017 + Produtcion
+CSS GRID > 2019 + Production
+1) float ++, inline-block
+2> smart
+3> less code
+
+1.(container)
+* parent > child
+(container)  (items)
+*axis
+*left, right + start, end
+*center  + spacing
+*reverse
+*direction (row/column)
+
+2.item
+*order
+*proportii > shrink/grow
+
+web UI / web frontend
+Frontend frameworks
+css frameworks
+
+libraries + frameworks
+
+Frameworks
+
++fast spin off
++ready to use components
++plugins/extensions
++xbrowser
++adaptive/responsive
++mobile  first
++100+ devs
+
++bugs/
++docs + tuts + strategies
++trust
+
+JAVASCRIPT  (ECMAscript / ES ES5 ES6(ES2015))
+
+Web Programing Language
++ Browser(frontend)
+(HTML- structura, CSS-style, JS-behaviour)
++Node.js (General Purpose)
++Gaming
++apps
++extensions
++ Data Exchange
+
+HTML-> document {
+elemente
+}
+
+JS -> script/program{
+    * expresii/actiuni/comenzi;
+    * case sensitive (x nu este X);
+    * expresisions:
+        - identifiers/names  alert("Hi") etc.
+        - values ------> 2+2, "hi" etc.
+        - operators/operations (actions)------> + , - , *...
+        - reserved words -----> if, else, switch,for
+        - prefix/labels -----> const, let, var
+        - {} -------> container/block code
+        - comments -----> //line  /* block comment */
+    * basic functions (read/write):
+        - alert(....) -----> info la user;
+        - confirm(....) -------> info la user/ poti vedea reactia la utilizator
+        - prompt (....) -----> info la user/ primeste un camp unde poate scrie ceva
+        - console.log(.....) --------- Console(F12);
+        document.write(......) ------->body
+    * data types:
+    - Number (100 ,-1, 0.5)
+    - String ("Hello" "425092323" "chisinau"....)
+    + "double" , 'single' , `modern`
+    - Boolean (true/false);
+    * variables
+    - var denumire = valoare;
+
+
+        }
+
+--Cind dam o denumire variabilei:
+
+"snake_case"
+
+--Cind dam denumire constantei:
+
+"CONSTANT_VALUE"

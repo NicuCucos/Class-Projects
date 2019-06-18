@@ -1,0 +1,10 @@
+.screen{
+    height: 570px;
+    width: 320px;
+    background-color: red;
+    float: left;
+    margin: 20px;
+    border: 3px solid #5f1629;
+    border-radius: 3px;
+    background-image: radial-gradient(#b6393a, #380d29);
+}

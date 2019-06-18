@@ -1,0 +1,31 @@
+// start condtions
+
+while (expresion/condition) {
+//code to reepeeat
+//step
+}
+
+
+switch (expresion) {
+case value1:  codeA; break;
+case value1:  codeB; break;
+case value1:  codeC; break;
+//....
+default: codeDefault; break;
+}
+
+
+for (start; condition ; steps ) {
+    //code
+
+}
+
+
+//looping
+
+do{
+    /code
+    /steps
+}while(condition){
+
+}

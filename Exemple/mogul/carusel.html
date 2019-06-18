@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Carusel</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <style media="screen">
+            body {
+                background-color: #333;
+            }
+
+            h2{
+                position: absolute;
+                top: 102px;
+                left: 317px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Carusel</h1>
+
+        <!--owl/ carousel  -->
+        <!--slick / carousel  -->
+        <div class="owl-carousel">
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=0" alt=""></div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300/?blur" alt=""></div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300/?gravity=east" alt=""> </div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/g/900/300" alt=""> </div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=69" alt=""></div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=169" alt=""> </div>
+      <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=689" alt=""> </div>
+    </div>
+
+    <div class="sl-carousel">
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=0" alt=""></div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300/?blur" alt=""></div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300/?gravity=east" alt=""> </div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/g/900/300" alt=""> </div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=69" alt=""></div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=169" alt=""> </div>
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?image=689" alt=""> </div>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+        </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        // autoplay:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+                // dots: true
+
+
+            },
+            900:{
+                items:2,
+                nav:false,
+                // dots: true
+
+
+            },
+            1800:{
+                items:3,
+                nav:true,
+                // dots: true
+                // loop:false
+
+            }
+        }
+    })
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sl-carousel').slick({
+      
+    });
+  });
+</script>
+    </body>
+</html>
