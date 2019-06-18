@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+   <link rel="stylesheet" href="miner.css">
+</head>
+<body onkeydown="action();">
+  <div id="map"></div>
+  <div id="health">
+
+  </div>
+  <!-- <button onclick="move_left();">LEFT</button>
+  <button onclick="move_right();">RIGHT</button> -->
+  <table id="controls">
+    <tr>
+      <td></td>
+      <td><button onclick="moveUp();" type="button" name="button">&uarr;</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><button onclick="moveRight();" type="button" name="button">&larr;</button></td>
+      <td></td>
+      <td><button onclick="moveLeft();" type="button" name="button">&rarr;</button></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button onclick="moveDown();" type="button" name="button">&darr;</button></td>
+      <td></td>
+    </tr>
+  </table>
+
+<script src="miner.js"></script>
+</body>
+</html>

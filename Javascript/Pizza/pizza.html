@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza
+        </title>
+    </head>
+    <body>
+        <!-- // de creat clasa Pizza
+        // name //string
+        // blat   // boolean
+        // price/number
+        weight//number -->
+
+
+        <script type="text/javascript">
+
+
+
+        class Pizza {
+            constructor(n,b,i,w,p){
+                this.name = n;
+                this.image = i;
+                this.blat = b;
+                this.weight = w;
+                this.price = p;
+            }
+
+            render(){
+                document.write(`<h2>${this.name}</h2>`);
+                document.write(`<img src ="${this.image}">`);
+            }
+        }
+            var p1 = new Pizza ("Prosciutto", "Subtire", "https://scontent.fsbz1-2.fna.fbcdn.net/v/t1.0-9/27973791_2650871008387672_8002100911210895397_n.jpg?_nc_cat=101&_nc_ht=scontent.fsbz1-2.fna&oh=7b92aadbefe3143b5c291fe07de0ee6b&oe=5D0EDEF9", "560g", 85 );
+            var p2 = new Pizza ("Diablo", "Subtire", "https://straus.s3.amazonaws.com/media/products2/ad2edc762dcb47a79ecae3c2673c7b95_big.jpg?version=1512978199", "600g", 69 );
+            var p3 = new Pizza ("Peperoni", "Gros", "https://scontent.fsbz1-2.fna.fbcdn.net/v/t1.0-9/27973791_2650871008387672_8002100911210895397_n.jpg?_nc_cat=101&_nc_ht=scontent.fsbz1-2.fna&oh=7b92aadbefe3143b5c291fe07de0ee6b&oe=5D0EDEF9", "620g", 80 );
+            console.log(p1,p2,p3)
+            p1.render();
+            p2.render();
+            p3.render();
+
+        </script>
+    </body>
+</html>

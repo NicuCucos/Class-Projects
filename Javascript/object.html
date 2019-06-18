@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Oject</title>
+    </head>
+    <body>
+    <script>
+        var dog = {
+        furr: true,
+        name: "Zveri",
+        race: "Senbernar",
+        weight: 200, //kg
+
+        bark: function(){
+            console.log( "RRRRRRRRRRRRR.....!!!!");
+        },
+        eat: function( what ){
+            console.log( "I am eating");
+            switch (what) {
+                case "icre": console.log("I am eating"); break;
+                case "pisica": console.log("I am eating"); break;
+                case "steak":  console.log("I am eating"); break;
+
+
+                default:  console.log("Nu vreu");
+                break;
+
+            }
+        },
+
+        who: function() {
+            console.log( "This is a dog");
+            console.log("it's name " + this.name);
+            console.log("race " + this.race);
+            console.log("weight "+ this.weight);
+        },
+
+
+        };
+
+        console.log (dog.name);
+        dog.bark();
+        dog.eat("mozghi");
+        dog.who();
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+
+
+
+
+<script type="text/javascript">
+var suma_mdl = prompt ("citi lei ai??");
+
+
+// dintro baza de date
+var usd_2_mdl = 17.50;
+var eur_2_mdl = 19.50;
+var comision = 2/100;
+
+// scoatem comisu
+suma_mdl = suma_mdl * (1 - comision);
+
+
+// calcule + afisare
+
+var suma_usd = suma_mdl / usd_2_mdl;
+var suma_eur = suma_mdl / eur_2_mdl;
+
+document.write ("in USD:" + suma_usd + "<br>");
+document.write ("in Euro:" + suma_eur);
+</script>

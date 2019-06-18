@@ -1,0 +1,44 @@
+99 information din Js ---->> este un object (thing)
+
+
+// container -> structured
+*properties
+*methods
+
+// String
+
+Array- o colectie ordonata de date
+
+// OOP
+
+// object,class
+// property -> variabbles
+// method() -> functions
+
+//static/dinamic
+//inhertance
+// encapsulation
+
+//////// Simple Object
+
+var phone = {
+    //properties
+    front_camera: 20, //mpx
+    back_camera: 50, //mpx
+    color: "yelow",
+    price: 10000 //mdl
+};
+
+
+//class OOP
+//classs SHBLON, TEMPLATE -> object
+// ES5 - function()
+// ES6+
+
+class Car {
+// SCHITA
+}
+
+/creez obiecte
+
+var c1 = new CAr();

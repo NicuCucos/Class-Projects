@@ -1,0 +1,24 @@
+<body style="font-family: monospace; line-height:10px;">
+<script type="text/javascript">
+    // input de la user //
+
+    var bomb_r = prompt("pe ce rand este bomba?");
+    var bomb_c = prompt("pe ce Coloane este bomba?");
+
+    // Deseneaza Harta //
+
+    for (r = 1; r<=10; r++ ){
+
+    for (var c = 1; c<=10; c++){
+        if (r==bomb_r && c==bomb_c ) {
+            document.write("*");
+        }
+        else{
+            document.write( "*");
+        }
+
+    }
+document.write("</br>");
+}
+</script>
+</body>

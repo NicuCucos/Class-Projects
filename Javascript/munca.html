@@ -1,0 +1,40 @@
+<!-- munca uni dev (junior) timp de o luna
+1...31 ianuarie
+1-luni
+luni-vineri (8 ore)
+sambata (4ore)
+pe ora - 10$; /ora (luni-vineri) 15$ / ora(weekend)
+
+1) Calculam ce salariu o primit pentru luna asta
+2) 12 % de calculat im[pzitul] pe venit (ajutam Fiscu) -->
+
+
+<script type="text/javascript">
+    var date = 1;
+    var salariu = 0.00;
+    var ore_l_v = +prompt("cate ore pe zi (Luni-Vineri)?");
+    var ore_s   = +prompt("cate ore pe zi (Sambata)?");
+
+    const REMUNERARE_L_V = 10;
+    const REMUNERARE_S = 15;
+    document.write('<table border="1">');
+    while (date <= 31 ){
+        if(date  % 7 == 6 || date % 7 == 0){
+            document.write( '<tr><td bgcolor="red">'+ date + '</td></tr>' );
+            if(date % 7 ==6 ){
+                salariu += ore_s * REMUNERARE_S;
+            }
+        }
+        else{
+            document.write( '<tr><td>'+ date + '</td></tr>' );
+            salariu += ore_l_v * REMUNERARE_L_V;
+        }
+        // document.write( '<tr><td>'+ date + '</td></tr>' );
+        date++;
+    }
+    document.write('</table>');
+    alert("salariul lunar:" + salariu + "$" );
+    alert("Impozitul tau:" + salariu * 0.12 +"$");
+
+
+</script>

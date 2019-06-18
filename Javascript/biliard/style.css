@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+}
+
+.ball{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+}
+.ball--red{
+  background-color: red;
+
+}
+.ball--green{
+  background-color: #0f0;
+}
+.ball--yellow {
+  background-color: yellow;
+}
+.ball--blue{
+  background-color: blue;
+
+}
+.ball--purple{
+  background-color: purple;
+
+}
+.ball--orange{
+  background-color: orange;
+
+}
+.ball--brown{
+  background-color: brown;
+
+}
+.ball--black{
+  background-color: black;
+
+}
+.ball--white{
+  background-color: white;
+
+}
+
+.ball-number {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  top: 15px;
+  left: 15px
+}
+.number {
+  position: relative;
+  top: 3px;
+  left: 12px;
+  font-size: 30px;
+}
+.table {
+  width: 1000px;
+  height: 550px;
+  border: 45px solid #c19a6b;
+  background-color: #225522;
+  position: absolute;
+}
+.hole{
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  border-radius: 100%;
+}

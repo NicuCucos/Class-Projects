@@ -1,0 +1,28 @@
+function > action()
+function block of code with name
+function > subroutine
+function > black box (engine)
+
+Avantaje:
+
++ DRY > Don't Repeat Yourself
++ separation of concerns
++ SOLID !!!! Important de invatat
+
+Momente Cheie:
+
+! declare           +           call
+    function f(){               f()
+
+    }
+
+! capsule
+! parameters / arguments
+! return values
+
+function name(arg1, arg2 , arg3...){
+ins1;
+ins2;
+
+return value;
+}    

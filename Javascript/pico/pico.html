@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+    </head>
+    <body>
+        <div id="profile">
+
+        </div>
+        <button id= "poza">
+        </button>
+
+        <script type="text/javascript">
+            var my_user = {
+                firstname: "Nicu",
+                bdate: "1990-01-02",
+                married: false,
+                likes: 10000,
+                avatar: "https://scontent.fsbz1-1.fna.fbcdn.net/v/t1.0-9/30531509_10209316706189131_1501285370063221655_n.jpg?_nc_cat=111&_nc_ht=scontent.fsbz1-1.fna&oh=33deb43923f1fdec4a848f17f8cef04a&oe=5D1BFA84",
+                friends: [],
+                languages: ["English", "Romanish", "Russian"],
+
+
+            showProfile: function() {
+                var div = document.getElementById('profile');
+                var like = document.getElementById('poza');
+
+                var langs = '<ul><li>' + this.languages.join("</li><li>") + '</li><ul>'
+                console.log( langs);
+                var html = `<div>
+                    <h2> ${this.firstname} <small>(${this.bdate})</small></h2>
+                    <img src="${this.avatar}" height="250">
+                    <hr>
+                    ${langs}
+                </div>`;
+                div.innerHTML = html;
+            like.innerHTML = `<div>
+            <img src = "http://icons.iconarchive.com/icons/martz90/hex/64/facebook-like-icon.png">
+                ${this.likes}
+            </div>`
+            },
+            };
+
+            my_user.showProfile();
+        </script>
+
+
+    </body>
+</html>

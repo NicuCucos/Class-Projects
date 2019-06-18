@@ -1,0 +1,31 @@
+<script type="text/javascript">
+
+// -20... 0 - Rece;
+// 1 ....10 - Normal;
+// 11 .... 50 > Cald;
+
+
+
+var t = +prompt("Cate grade sunt afara");
+
+if(t > 50 || t < -20 || t===null || t===""  ) {
+    document.write( ".......Fuck you");
+}else{
+document.write ('<div>-20|-10|  0| 10| 20| 30| 40| 50 </div>');
+var w = (t + 20) * 2.7;
+document.write ('<div style="background:red; height:5px; width:'+w+'px"></div>');
+if (t >= -20 && t <= 0) {
+    document.write("Rece");
+}
+
+else if(t <=10){
+    document.write( "Normal");
+}
+else {
+    document.write("Cald");
+}
+}
+</script>
+
+
+<!-- cind apasam null in promt -->
